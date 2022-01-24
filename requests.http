@@ -1,0 +1,33 @@
+### Users Create
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Beseter Tester",
+  "email": "bester.tester.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "tester.fester.com",
+  "password": "password"
+}
+
+### Dogs Create
+
+POST http://localhost:3000/dogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDMxNDc2ODF9.WNzIpjCUwEOerx_PGdNV-Kohfs8qoJ3BdhfyB1LK0Ec
+
+{
+  "name": "Lorelai",
+  "age": 4,
+  "breed": "Golden Retriever"
+}
